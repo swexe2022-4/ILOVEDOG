@@ -1,0 +1,9 @@
+<div>
+    <%= @dog.name %>
+    <%= @dog.breeds %>
+    <%= @dog.sex %>
+    <%= "#{@dog.weight}kg" %>
+    <%= @dog.birthday %>
+    <%= link_to '編集', edit_dog_path(@dog.id) %>
+    <%= link_to '削除', dog_path(@dog.id), method: :delete %>
+</div>
