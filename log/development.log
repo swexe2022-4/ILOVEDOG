@@ -1,0 +1,1690 @@
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:9
+  [1m[35m (18.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (8.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20221109075714)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20221109075714)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20221109075714_create_users.rb:3
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20221109075714_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221109075714"]]
+  ↳ bin/rails:9
+  [1m[35m (13.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (3.9ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-11-09 08:10:51.336138"], ["updated_at", "2022-11-09 08:10:51.336138"]]
+  ↳ bin/rails:9
+  [1m[35m (9.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for 157.13.37.253 at 2022-11-09 08:26:07 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/railties-5.2.8.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/railties-5.2.8.1/lib/rails/templates/rails/welcome/index.html.erb (6.6ms)
+Completed 200 OK in 64ms (Views: 46.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 157.13.37.253 at 2022-11-09 08:26:09 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/railties-5.2.8.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/railties-5.2.8.1/lib/rails/templates/rails/welcome/index.html.erb (2.0ms)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 157.13.37.253 at 2022-11-09 08:26:17 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/railties-5.2.8.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/railties-5.2.8.1/lib/rails/templates/rails/welcome/index.html.erb (2.0ms)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 157.13.37.253 at 2022-11-09 08:29:24 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 982ms (Views: 945.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 157.13.37.253 at 2022-11-09 08:29:26 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 33ms (Views: 32.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/new" for 157.13.37.253 at 2022-11-09 08:29:31 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (26.9ms)
+Completed 200 OK in 60ms (Views: 53.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for 157.13.37.253 at 2022-11-09 08:29:41 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"E6IIOIgsxQ9mUD4NYADb/NbFzbPJGLU+6DCUVK290zIH1dD3+I72cJRfzVn05IMW6vyrmGKwg2I/huOjc3PUaA==", "user"=>{"name"=>"杉岡", "email"=>"2011140016p@ed.fuk.kindai.ac.jp"}, "commit"=>"登録"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/users_controller.rb:11:in `create'
+Started GET "/" for 157.13.37.253 at 2022-11-09 08:37:29 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 242ms (Views: 233.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 157.13.37.253 at 2022-11-09 08:37:30 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 34ms (Views: 32.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/new" for 157.13.37.253 at 2022-11-09 08:37:32 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 47ms (Views: 39.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for 157.13.37.253 at 2022-11-09 08:37:36 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OE0qA6/Ye+961fHAorw9WNHsU+QeC2DR/AHzLhyA8twsOvLM33pIkIjaApQ2WGWy7dU1z7WjVo0rt4TZwk71hg==", "user"=>{"name"=>"杉岡", "email"=>"2011140016p@ed.fuk.kindai.ac.jp"}, "commit"=>"登録"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/users_controller.rb:11:in `create'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (3.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "杉岡"], ["email", "2011140016p@ed.fuk.kindai.ac.jp"], ["created_at", "2022-11-09 08:41:56.155795"], ["updated_at", "2022-11-09 08:41:56.155795"]]
+  [1m[35m (10.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/" for 157.13.37.253 at 2022-11-09 08:42:23 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 249ms (Views: 242.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 157.13.37.253 at 2022-11-09 08:42:24 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 36ms (Views: 35.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/new" for 157.13.37.253 at 2022-11-09 08:42:33 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 34ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 157.13.37.253 at 2022-11-09 08:42:40 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pDQxNPmXfXQ2Xzlc+e/2uUfXasq4CNCXPD4RWfgUREGwQ+n7iTVOC8RQyghtC65Te+4M4ROg5svriGauJtpDGw==", "user"=>{"name"=>"aaa", "email"=>"aaa"}, "commit"=>"登録"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/users_controller.rb:11:in `create'
+Started GET "/" for 157.13.37.253 at 2022-11-09 08:45:42 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 44ms (Views: 41.5ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/users" for 157.13.37.253 at 2022-11-09 08:45:50 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pDQxNPmXfXQ2Xzlc+e/2uUfXasq4CNCXPD4RWfgUREGwQ+n7iTVOC8RQyghtC65Te+4M4ROg5svriGauJtpDGw==", "user"=>{"name"=>"aaa", "email"=>"aaa"}, "commit"=>"登録"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:12
+  [1m[36mUser Create (1.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "aaa"], ["email", "aaa"], ["created_at", "2022-11-09 08:45:50.892197"], ["updated_at", "2022-11-09 08:45:50.892197"]]
+  ↳ app/controllers/users_controller.rb:12
+  [1m[35m (11.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:12
+Redirected to https://74438ea6eb3041a292858697b0941bc4.vfs.cloud9.us-east-1.amazonaws.com/
+Completed 302 Found in 19ms (ActiveRecord: 13.3ms)
+
+
+Started GET "/" for 157.13.37.253 at 2022-11-09 08:45:51 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 29ms (Views: 28.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 157.13.37.253 at 2022-11-09 08:49:22 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 254ms (Views: 235.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 157.13.37.253 at 2022-11-09 08:49:26 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 31ms (Views: 30.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/new" for 157.13.37.253 at 2022-11-09 08:49:30 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (22.5ms)
+Completed 200 OK in 89ms (Views: 81.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 157.13.37.253 at 2022-11-09 08:49:40 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Thi31NDFFM/Tk21uPIAV7lvdyvOblJnXip2gE9fjfrVab28boGcnsCGcnjqoZE0EZ+Ss2DA8r4tdK9fkCS157w==", "user"=>{"name"=>"bbb", "email"=>"bbb"}, "commit"=>"登録"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:12
+  [1m[36mUser Create (1.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "bbb"], ["email", "bbb"], ["created_at", "2022-11-09 08:49:40.730812"], ["updated_at", "2022-11-09 08:49:40.730812"]]
+  ↳ app/controllers/users_controller.rb:12
+  [1m[35m (12.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:12
+Redirected to https://74438ea6eb3041a292858697b0941bc4.vfs.cloud9.us-east-1.amazonaws.com/
+Completed 302 Found in 22ms (ActiveRecord: 14.5ms)
+
+
+Started GET "/" for 157.13.37.253 at 2022-11-09 08:49:40 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 62ms (Views: 61.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 157.13.37.253 at 2022-11-09 09:01:21 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (17.6ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"users", :user_id=>1}, missing required keys: [:id]):
+     5:   <%= f.name %>
+     6:   <%= f.email %>
+     7:   <%= link_to '削除', user_path(f.id), method: :delete %>
+     8:   <%= link_to '編集', edit_user_path(user_id: f.id) %>
+     9: </p>
+    10: <% end %>
+    11: 
+  
+app/views/users/index.html.erb:8:in `block in _app_views_users_index_html_erb__2679967495736573428_70006363760700'
+app/views/users/index.html.erb:3:in `_app_views_users_index_html_erb__2679967495736573428_70006363760700'
+Started GET "/" for 157.13.37.253 at 2022-11-09 09:01:38 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (3.9ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"users", :user_id=>1}, missing required keys: [:id]):
+     5:   <%= f.name %>
+     6:   <%= f.email %>
+     7:   <%= link_to '削除', user_path(f.id), method: :delete %>
+     8:   <%= link_to '編集', edit_user_path(user_id: f.id) %>
+     9: </p>
+    10: <% end %>
+    11: 
+  
+app/views/users/index.html.erb:8:in `block in _app_views_users_index_html_erb__2679967495736573428_70006367963360'
+app/views/users/index.html.erb:3:in `_app_views_users_index_html_erb__2679967495736573428_70006367963360'
+Started GET "/" for 157.13.37.253 at 2022-11-09 09:04:26 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 34ms (Views: 32.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/2/edit" for 157.13.37.253 at 2022-11-09 09:04:30 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 42ms (Views: 29.7ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/users/2" for 157.13.37.253 at 2022-11-09 09:04:35 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vaOMpLrDm/2nIJGxaBuImV0oT13PE4IPquLvZgajLz095FSaqtV4p/3g5Xf/JyaxgbP9kQgB1HZK9jLZml+Ycg==", "user"=>{"name"=>"aa", "email"=>"aa"}, "commit"=>"登録", "id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27
+Redirected to https://74438ea6eb3041a292858697b0941bc4.vfs.cloud9.us-east-1.amazonaws.com/
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 157.13.37.253 at 2022-11-09 09:04:35 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 33ms (Views: 32.0ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/users/3" for 157.13.37.253 at 2022-11-09 09:04:45 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DUOPxGd6kkumlKYhj3RlfO0wXWYbrAa/xYZ1hCVz08nkKVdcGG97AFAjWiFaku/yHrVXJM8xoCiDACvvDYHCpQ==", "id"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:18
+  [1m[36mUser Destroy (1.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 3]]
+  ↳ app/controllers/users_controller.rb:18
+  [1m[35m (4.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:18
+Redirected to https://74438ea6eb3041a292858697b0941bc4.vfs.cloud9.us-east-1.amazonaws.com/
+Completed 302 Found in 13ms (ActiveRecord: 6.3ms)
+
+
+Started GET "/" for 157.13.37.253 at 2022-11-09 09:04:45 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 34ms (Views: 32.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/2/edit" for 157.13.37.253 at 2022-11-09 09:04:47 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 45ms (Views: 41.3ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/users/2" for 157.13.37.253 at 2022-11-09 09:04:51 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2HQr34rCyelGzl0kvmkcUHK/VYLYsbsD6R+ch72eekRYM/PhmtQqsxwOKeIpVbJ4riTnTh+j7XoJC0E4IWLNCw==", "user"=>{"name"=>"aa", "email"=>"aa"}, "commit"=>"登録", "id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27
+Redirected to https://74438ea6eb3041a292858697b0941bc4.vfs.cloud9.us-east-1.amazonaws.com/
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 157.13.37.253 at 2022-11-09 09:04:52 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 39ms (Views: 37.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 157.13.37.253 at 2022-11-09 09:07:46 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 31ms (Views: 30.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 157.13.37.253 at 2022-11-09 09:07:47 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 29ms (Views: 28.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/1/edit" for 157.13.37.253 at 2022-11-09 09:07:50 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 32ms (Views: 28.8ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/users/1" for 157.13.37.253 at 2022-11-09 09:07:52 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Msh1iKl7AUP4O/IKVZtmj0wvYfDQb+ngHzoQAAIdn/MawitU2PCfhBXntfrstDpeOTRYBSkDqSTh53gRTk7PKg==", "user"=>{"name"=>"杉岡", "email"=>"2011140016p@ed.fuk.kindai.ac.jp"}, "commit"=>"更新", "id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27
+Redirected to https://74438ea6eb3041a292858697b0941bc4.vfs.cloud9.us-east-1.amazonaws.com/
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 157.13.37.253 at 2022-11-09 09:07:52 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 29ms (Views: 27.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/2/edit" for 157.13.37.253 at 2022-11-09 09:07:54 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 43ms (Views: 40.5ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/users/2" for 157.13.37.253 at 2022-11-09 09:08:01 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sCMAPyS2FSbhie6pa9xE80lQDSrlE7c/hGFhPdk3SecwZNgBNKD2fLtJmm/84Orblcu/5iIB4UZkdbyCRcv+qA==", "user"=>{"name"=>"a", "email"=>"a"}, "commit"=>"更新", "id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27
+Redirected to https://74438ea6eb3041a292858697b0941bc4.vfs.cloud9.us-east-1.amazonaws.com/
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 157.13.37.253 at 2022-11-09 09:08:01 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 32ms (Views: 30.6ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/users/2" for 157.13.37.253 at 2022-11-09 09:08:05 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"T70r/8tlecxUkJD0zvAYkKXyQaPasdajui/Q2Ri7n2um1/NntHCQh6InbPQbFpIeVndL4Q4scDT8qY6yMEmOBw==", "id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:18
+  [1m[36mUser Destroy (1.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/users_controller.rb:18
+  [1m[35m (12.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:18
+Redirected to https://74438ea6eb3041a292858697b0941bc4.vfs.cloud9.us-east-1.amazonaws.com/
+Completed 302 Found in 20ms (ActiveRecord: 13.9ms)
+
+
+Started GET "/" for 157.13.37.253 at 2022-11-09 09:08:05 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 36ms (Views: 34.9ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/users/1" for 157.13.37.253 at 2022-11-09 09:08:06 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"6ojlepXd9abbuPDAgDRBbMtsEaE2LbO+oHYhkkti5FUD4j3i6sgc7S0PDMBV0sviOOkb4+KwFSnm8H/5Y5D1OQ==", "id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:18
+  [1m[36mUser Destroy (1.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/users_controller.rb:18
+  [1m[35m (19.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:18
+Redirected to https://74438ea6eb3041a292858697b0941bc4.vfs.cloud9.us-east-1.amazonaws.com/
+Completed 302 Found in 25ms (ActiveRecord: 20.5ms)
+
+
+Started GET "/" for 157.13.37.253 at 2022-11-09 09:08:06 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 30ms (Views: 29.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/new" for 157.13.37.253 at 2022-11-09 09:08:07 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 30ms (Views: 28.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 157.13.37.253 at 2022-11-09 09:08:11 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NG4vR658RdHD+UAzZ262UJhvChdCKiWb8TYV3ZhohZ8gGfeI3t52rjH2s2fziu66pFZsPOmCE8cmgGIqRqaCxQ==", "user"=>{"name"=>"aaa", "email"=>"aaa"}, "commit"=>"登録"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:12
+  [1m[36mUser Create (1.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "aaa"], ["email", "aaa"], ["created_at", "2022-11-09 09:08:11.341224"], ["updated_at", "2022-11-09 09:08:11.341224"]]
+  ↳ app/controllers/users_controller.rb:12
+  [1m[35m (11.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:12
+Redirected to https://74438ea6eb3041a292858697b0941bc4.vfs.cloud9.us-east-1.amazonaws.com/
+Completed 302 Found in 19ms (ActiveRecord: 12.6ms)
+
+
+Started GET "/" for 157.13.37.253 at 2022-11-09 09:08:11 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 31ms (Views: 30.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/4/edit" for 157.13.37.253 at 2022-11-09 09:08:12 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 42ms (Views: 39.7ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/users/4" for 157.13.37.253 at 2022-11-09 09:08:16 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rR7nFVtW5LOqClGlQ6VDjIpuNsq6/CQnw2ixxMY6V22VAYgQRbrlwuBM9t0T2yLwQOKFD2F3Wu8RDHZ5qVkUKg==", "user"=>{"name"=>"aa", "email"=>"aa"}, "commit"=>"更新", "id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27
+Redirected to https://74438ea6eb3041a292858697b0941bc4.vfs.cloud9.us-east-1.amazonaws.com/
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 157.13.37.253 at 2022-11-09 09:08:16 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 34ms (Views: 32.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 157.13.37.253 at 2022-11-09 09:10:48 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 44ms (Views: 41.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/4/edit" for 157.13.37.253 at 2022-11-09 09:10:49 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 32ms (Views: 28.7ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/users/4" for 157.13.37.253 at 2022-11-09 09:10:55 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fvdPpK9EYwBaK74Fsca5kzGrbnlfNlRMN9goHqE+1A5G6CChsahicRBtGX3huNjv+yfdvIS9KoTlvO+jzl2XSQ==", "user"=>{"name"=>"aa", "email"=>"aa"}, "commit"=>"更新", "id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:28
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:28
+  [1m[36mUser Update (1.9ms)[0m  [1m[33mUPDATE "users" SET "name" = ?, "email" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["name", "aa"], ["email", "aa"], ["updated_at", "2022-11-09 09:10:55.476872"], ["id", 4]]
+  ↳ app/controllers/users_controller.rb:28
+  [1m[35m (11.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:28
+Redirected to https://74438ea6eb3041a292858697b0941bc4.vfs.cloud9.us-east-1.amazonaws.com/
+Completed 302 Found in 22ms (ActiveRecord: 13.3ms)
+
+
+Started GET "/" for 157.13.37.253 at 2022-11-09 09:10:55 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 29ms (Views: 28.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/new" for 157.13.37.253 at 2022-11-09 09:10:57 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 41ms (Views: 38.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 157.13.37.253 at 2022-11-09 09:11:04 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+/7gJdfaMtqN+mbEge8cmcmsWsntwlPY0r3zkJQrdQPviTjqp3gBpX/1lZAVC0Rz9ZU84kZqZYQFC4RnSuVyWQ==", "user"=>{"name"=>"杉岡", "email"=>"2011140016p@ed.fuk.kindai.ac.jp"}, "commit"=>"登録"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:12
+  [1m[36mUser Create (1.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "杉岡"], ["email", "2011140016p@ed.fuk.kindai.ac.jp"], ["created_at", "2022-11-09 09:11:04.306794"], ["updated_at", "2022-11-09 09:11:04.306794"]]
+  ↳ app/controllers/users_controller.rb:12
+  [1m[35m (13.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:12
+Redirected to https://74438ea6eb3041a292858697b0941bc4.vfs.cloud9.us-east-1.amazonaws.com/
+Completed 302 Found in 22ms (ActiveRecord: 14.9ms)
+
+
+Started GET "/" for 157.13.37.253 at 2022-11-09 09:11:04 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 30ms (Views: 29.1ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/users/4" for 157.13.37.253 at 2022-11-09 09:12:03 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"fAp2jt1Ct5Ibj4dxveHoh83/NSTfN+ZhzmDZTQ1ATK2VYK4Wolde2e04e3FoB2IJPno/ZguqQPaI5ocmJbJdwQ==", "id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:18
+  [1m[36mUser Destroy (1.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 4]]
+  ↳ app/controllers/users_controller.rb:18
+  [1m[35m (13.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:18
+Redirected to https://74438ea6eb3041a292858697b0941bc4.vfs.cloud9.us-east-1.amazonaws.com/
+Completed 302 Found in 22ms (ActiveRecord: 14.7ms)
+
+
+Started GET "/" for 157.13.37.253 at 2022-11-09 09:12:03 +0000
+Cannot render console from 157.13.37.253! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 30ms (Views: 29.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 157.13.46.105 at 2022-11-16 07:07:41 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 307ms (Views: 298.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 157.13.46.105 at 2022-11-16 07:07:43 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 27ms (Views: 26.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/new" for 157.13.46.105 at 2022-11-16 07:07:46 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 31ms (Views: 29.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 157.13.46.105 at 2022-11-16 07:08:11 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+5Rfz657X2Ly3+WHqTDjaCRpjUB9MEAwjtLwb+Sw6Wvt97Grp11aT7y7S+/6TM4KnVCdWf6QKlcQjZnCZwi6+g==", "user"=>{"name"=>"Sugioka", "email"=>"sugioka@mail"}, "commit"=>"登録"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:12
+  [1m[36mUser Create (1.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Sugioka"], ["email", "sugioka@mail"], ["created_at", "2022-11-16 07:08:12.007112"], ["updated_at", "2022-11-16 07:08:12.007112"]]
+  ↳ app/controllers/users_controller.rb:12
+  [1m[35m (8.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:12
+Redirected to https://74438ea6eb3041a292858697b0941bc4.vfs.cloud9.us-east-1.amazonaws.com/
+Completed 302 Found in 17ms (ActiveRecord: 10.1ms)
+
+
+Started GET "/" for 157.13.46.105 at 2022-11-16 07:08:12 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 61ms (Views: 59.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/6/edit" for 157.13.46.105 at 2022-11-16 07:08:18 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 32ms (Views: 25.8ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/users/6" for 157.13.46.105 at 2022-11-16 07:08:25 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w9/cgIWxWZ4DgBpF1FTkAThto5hWqbtIHALZpwhbUsamLuVOD5VBlPU4RGLGnkn3xkAcWpam2uHu1V+SAq4Lzw==", "user"=>{"name"=>"Sugioka", "email"=>"sugioka@mailだよ"}, "commit"=>"更新", "id"=>"6"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:28
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:28
+  [1m[36mUser Update (1.2ms)[0m  [1m[33mUPDATE "users" SET "name" = ?, "email" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["name", "Sugioka"], ["email", "sugioka@mailだよ"], ["updated_at", "2022-11-16 07:08:25.644225"], ["id", 5]]
+  ↳ app/controllers/users_controller.rb:28
+  [1m[35m (11.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:28
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:28
+  [1m[36mUser Update (0.2ms)[0m  [1m[33mUPDATE "users" SET "email" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["email", "sugioka@mailだよ"], ["updated_at", "2022-11-16 07:08:25.660188"], ["id", 6]]
+  ↳ app/controllers/users_controller.rb:28
+  [1m[35m (4.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:28
+Redirected to https://74438ea6eb3041a292858697b0941bc4.vfs.cloud9.us-east-1.amazonaws.com/
+Completed 302 Found in 28ms (ActiveRecord: 17.7ms)
+
+
+Started GET "/" for 157.13.46.105 at 2022-11-16 07:08:25 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 25ms (Views: 24.1ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/users/6" for 157.13.46.105 at 2022-11-16 07:08:28 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"MaHMldSNhwzIFk/xv7mPz7MgiIqPulBTTZm0WYNtqozi23sTSKvk706OxEf21/nDNi73ajK9Y8nNW1EffeaCkw==", "id"=>"6"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:18
+  [1m[36mUser Destroy (0.9ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 6]]
+  ↳ app/controllers/users_controller.rb:18
+  [1m[35m (11.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:18
+Redirected to https://74438ea6eb3041a292858697b0941bc4.vfs.cloud9.us-east-1.amazonaws.com/
+Completed 302 Found in 18ms (ActiveRecord: 12.5ms)
+
+
+Started GET "/" for 157.13.46.105 at 2022-11-16 07:08:28 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 27ms (Views: 25.8ms | ActiveRecord: 0.1ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:9
+  [1m[35m (12.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (8.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20221109075714)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "pass" varchar, "description" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20221109075714_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221109075714"]]
+  ↳ bin/rails:9
+  [1m[35m (14.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (5.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-11-16 07:22:42.343533"], ["updated_at", "2022-11-16 07:22:42.343533"]]
+  ↳ bin/rails:9
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for 157.13.46.105 at 2022-11-16 07:49:45 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 318ms (Views: 298.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 157.13.46.105 at 2022-11-16 07:49:47 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 20ms (Views: 18.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/new" for 157.13.46.105 at 2022-11-16 07:49:49 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 59ms (Views: 52.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for 157.13.46.105 at 2022-11-16 07:49:58 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"osJ8zm/E3CiRxenDgzG3ADNXjLpqd6pY1pcIntKizpO0oZKqZuLZBd+hR6vQTZpiim6co+nXwD9IyGEzURqdAg==", "user"=>{"name"=>"杉岡", "email"=>"aa"}, "commit"=>"登録"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:12
+  [1m[36mUser Create (1.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "杉岡"], ["email", "aa"], ["created_at", "2022-11-16 07:49:58.045144"], ["updated_at", "2022-11-16 07:49:58.045144"]]
+  ↳ app/controllers/users_controller.rb:12
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:12
+Redirected to https://74438ea6eb3041a292858697b0941bc4.vfs.cloud9.us-east-1.amazonaws.com/
+Completed 302 Found in 15ms (ActiveRecord: 7.3ms)
+
+
+Started GET "/" for 157.13.46.105 at 2022-11-16 07:49:58 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 20ms (Views: 19.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/1/edit" for 157.13.46.105 at 2022-11-16 07:50:03 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:23
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 28ms (Views: 18.0ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/users/1" for 157.13.46.105 at 2022-11-16 07:50:05 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7M1OrTMma3ztZtFIyg2Mwj/ibbeACv87anGtf+Kt1It/jrVy2HXxbXbojYNqxFokDPu509Rg0RcnQmg9Z9AQ9A==", "user"=>{"name"=>"杉岡", "email"=>"aa"}, "commit"=>"更新", "id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:27
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:28
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:28
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:28
+Redirected to https://74438ea6eb3041a292858697b0941bc4.vfs.cloud9.us-east-1.amazonaws.com/
+Completed 302 Found in 8ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 157.13.46.105 at 2022-11-16 07:50:06 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/users/1" for 157.13.46.105 at 2022-11-16 07:50:08 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"JHtmmfE9vFnZKLHaOj4qGKlQ4YGAjDEPgRaaCW05rYH3AdEfbRvful+wOmxzUFwULF6eYT2LApUB1H9Pk7KFng==", "id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:18
+  [1m[36mUser Destroy (1.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/users_controller.rb:18
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:18
+Redirected to https://74438ea6eb3041a292858697b0941bc4.vfs.cloud9.us-east-1.amazonaws.com/
+Completed 302 Found in 15ms (ActiveRecord: 6.6ms)
+
+
+Started GET "/" for 157.13.46.105 at 2022-11-16 07:50:08 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 157.13.46.105 at 2022-11-16 07:51:18 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by TopController#main as HTML
+  Rendering top/login.html.erb within layouts/application
+  Rendered top/login.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 204ms (Views: 199.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 157.13.46.105 at 2022-11-16 07:51:20 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopController#main as HTML
+  Rendering top/login.html.erb within layouts/application
+  Rendered top/login.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/top/login" for 157.13.46.105 at 2022-11-16 07:51:31 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OB1bD+r/nFHniTfuHxPAX2TgxGoNtzQ1xSBv4fjFx5jrZ+yJdtn/smERvFhWfbZT4e67irCwB69F4oqnBk7vhw==", "email"=>"2011140016p@ed.fuk.kindai.ac.jp", "pass"=>"aaaaa", "commit"=>"登録"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."uid" = ? LIMIT ?[0m  [["uid", "2011140016p@ed.fuk.kindai.ac.jp"], ["LIMIT", 1]]
+  ↳ app/controllers/top_controller.rb:11
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.7ms)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: users.uid: SELECT  "users".* FROM "users" WHERE "users"."uid" = ? LIMIT ?):
+  
+app/controllers/top_controller.rb:11:in `login'
+Started GET "/users" for 157.13.46.105 at 2022-11-16 07:52:38 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 21ms (Views: 20.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/new" for 157.13.46.105 at 2022-11-16 07:52:40 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 44ms (Views: 37.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for 157.13.46.105 at 2022-11-16 07:52:48 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SYGxrnJdgkLbkJdQr3pb4tfwib4/jhK7SLxzhM+FDkZf4l/Ke3uHb5X0OTj8BnaAbsmZp7wueNzW4xopTD1d1w==", "user"=>{"name"=>"aaa", "email"=>"aaa"}, "commit"=>"登録"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:12
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "aaa"], ["email", "aaa"], ["created_at", "2022-11-16 07:52:48.827003"], ["updated_at", "2022-11-16 07:52:48.827003"]]
+  ↳ app/controllers/users_controller.rb:12
+  [1m[35m (5.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:12
+Redirected to https://74438ea6eb3041a292858697b0941bc4.vfs.cloud9.us-east-1.amazonaws.com/
+Completed 302 Found in 15ms (ActiveRecord: 6.9ms)
+
+
+Started GET "/" for 157.13.46.105 at 2022-11-16 07:52:49 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopController#main as HTML
+  Rendering top/login.html.erb within layouts/application
+  Rendered top/login.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 25ms (Views: 24.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/top/login" for 157.13.46.105 at 2022-11-16 07:53:01 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w1pRucEEK5TbOpXaOA2yMuz4z2xfeAX6xvm6zyoEC+wQIOY/XSJId12iHmxxY8Q+afawjOJ/NmBGO1+J1I8j8w==", "email"=>"aaa", "pass"=>"aaa", "commit"=>"登録"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."uid" = ? LIMIT ?[0m  [["uid", "aaa"], ["LIMIT", 1]]
+  ↳ app/controllers/top_controller.rb:11
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.5ms)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: users.uid: SELECT  "users".* FROM "users" WHERE "users"."uid" = ? LIMIT ?):
+  
+app/controllers/top_controller.rb:11:in `login'
+Started GET "/users" for 157.13.46.105 at 2022-11-16 07:53:15 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 25ms (Views: 24.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 157.13.46.105 at 2022-11-16 08:15:53 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by TopController#main as HTML
+  Rendering top/login.html.erb within layouts/application
+  Rendered top/login.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 208ms (Views: 203.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 157.13.46.105 at 2022-11-16 08:15:54 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopController#main as HTML
+  Rendering top/login.html.erb within layouts/application
+  Rendered top/login.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/top/login" for 157.13.46.105 at 2022-11-16 08:16:07 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b55JzZhooYa9giaOyPyaHH7dp0mWPLyDK5FBpD0Y1iu85P5LBE7CZTsarTiBkuwQ+9PYqSs7jxmrU6Tiw5P+NA==", "email"=>"2011140016p@ed.fuk.kindai.ac.jp", "pass"=>"aaaa", "commit"=>"登録"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."uid" = ? LIMIT ?[0m  [["uid", "2011140016p@ed.fuk.kindai.ac.jp"], ["LIMIT", 1]]
+  ↳ app/controllers/top_controller.rb:11
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.7ms)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: users.uid: SELECT  "users".* FROM "users" WHERE "users"."uid" = ? LIMIT ?):
+  
+app/controllers/top_controller.rb:11:in `login'
+Started GET "/users" for 157.13.46.105 at 2022-11-16 08:16:14 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 26ms (Views: 24.8ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/users/2" for 157.13.46.105 at 2022-11-16 08:16:16 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"lHew1EwAZ8nrHFoMUFAbrh6tyqsMpHCXXC/IdOwBeCRHDQdS0CYEKm2E0boZPm2im6O1S7GjQw3c7S0yEopQOw==", "id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:18
+  [1m[36mUser Destroy (1.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/users_controller.rb:18
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:18
+Redirected to https://74438ea6eb3041a292858697b0941bc4.vfs.cloud9.us-east-1.amazonaws.com/
+Completed 302 Found in 17ms (ActiveRecord: 7.2ms)
+
+
+Started GET "/" for 157.13.46.105 at 2022-11-16 08:16:17 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopController#main as HTML
+  Rendering top/login.html.erb within layouts/application
+  Rendered top/login.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 18ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 157.13.46.105 at 2022-11-16 08:16:19 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 31ms (Views: 29.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/new" for 157.13.46.105 at 2022-11-16 08:16:20 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 26ms (Views: 25.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 157.13.46.105 at 2022-11-16 08:16:27 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TmCPRzky9jakWrRTRfYB7GtkrNgus6NuT5raHN3hAmVYA2EjMBTzG+o+GjsWiiyO0l28wa0TyQnRxbOxXllR9A==", "user"=>{"name"=>"杉岡", "email"=>"aaa"}, "commit"=>"登録"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:12
+  [1m[36mUser Create (3.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "杉岡"], ["email", "aaa"], ["created_at", "2022-11-16 08:16:27.471853"], ["updated_at", "2022-11-16 08:16:27.471853"]]
+  ↳ app/controllers/users_controller.rb:12
+  [1m[35m (4.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:12
+Redirected to https://74438ea6eb3041a292858697b0941bc4.vfs.cloud9.us-east-1.amazonaws.com/
+Completed 302 Found in 17ms (ActiveRecord: 8.1ms)
+
+
+Started GET "/" for 157.13.46.105 at 2022-11-16 08:16:27 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopController#main as HTML
+  Rendering top/login.html.erb within layouts/application
+  Rendered top/login.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 47ms (Views: 46.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/top/login" for 157.13.46.105 at 2022-11-16 08:16:35 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xbcQo278iMcIWe5kA5o0Aoe6e2QkRAwNTThRY26vPTQWzacl8trrJI7BZdJK9EIOArQEhJlDP5fN+rQlkCQVKw==", "email"=>"aaa", "pass"=>"aaaa", "commit"=>"登録"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."uid" = ? LIMIT ?[0m  [["uid", "aaa"], ["LIMIT", 1]]
+  ↳ app/controllers/top_controller.rb:11
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.5ms)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: users.uid: SELECT  "users".* FROM "users" WHERE "users"."uid" = ? LIMIT ?):
+  
+app/controllers/top_controller.rb:11:in `login'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/" for 157.13.46.105 at 2022-11-16 08:21:08 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by TopController#main as HTML
+  Rendering top/login.html.erb within layouts/application
+  Rendered top/login.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 212ms (Views: 207.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 157.13.46.105 at 2022-11-16 08:21:10 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopController#main as HTML
+  Rendering top/login.html.erb within layouts/application
+  Rendered top/login.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 18ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 157.13.46.105 at 2022-11-16 08:21:12 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 28ms (Views: 25.5ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/users/3" for 157.13.46.105 at 2022-11-16 08:21:14 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"gnX1QCWSgvYojuTjI7PHHBTdqFGK8c93U07VTQef4OFRD0LGubThFa4Wb1Vq3bEQkdPXsTf2/O3TjDAL+RTI/g==", "id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:18
+  [1m[36mUser Destroy (1.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 3]]
+  ↳ app/controllers/users_controller.rb:18
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:18
+Redirected to https://74438ea6eb3041a292858697b0941bc4.vfs.cloud9.us-east-1.amazonaws.com/
+Completed 302 Found in 16ms (ActiveRecord: 7.0ms)
+
+
+Started GET "/" for 157.13.46.105 at 2022-11-16 08:21:15 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopController#main as HTML
+  Rendering top/login.html.erb within layouts/application
+  Rendered top/login.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 47ms (Views: 46.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 157.13.46.105 at 2022-11-16 08:21:17 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 20ms (Views: 18.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/new" for 157.13.46.105 at 2022-11-16 08:21:18 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 157.13.46.105 at 2022-11-16 08:21:26 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s04CEwvvVi6wolpbnTcMsECxq/yqyzm/HqBH+hBlUMilLex3AslTA/7G9DPOSyHS+Yi75SlrU9iA/y5Xk90DWQ==", "user"=>{"name"=>"aa", "email"=>"aa"}, "commit"=>"登録"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:12
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "aa"], ["email", "aa"], ["created_at", "2022-11-16 08:21:26.230629"], ["updated_at", "2022-11-16 08:21:26.230629"]]
+  ↳ app/controllers/users_controller.rb:12
+  [1m[35m (12.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:12
+Redirected to https://74438ea6eb3041a292858697b0941bc4.vfs.cloud9.us-east-1.amazonaws.com/
+Completed 302 Found in 19ms (ActiveRecord: 13.5ms)
+
+
+Started GET "/" for 157.13.46.105 at 2022-11-16 08:21:26 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopController#main as HTML
+  Rendering top/login.html.erb within layouts/application
+  Rendered top/login.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 17ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/top/login" for 157.13.46.105 at 2022-11-16 08:21:35 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RGF8euT+QCjtTG22IqBUSX1LGkxIjRVGftHE49k6DKKXG8v8eNgjy2vU5gBrziJF+EVlrPWKJtz+EyGlJ7EkvQ==", "email"=>"aa", "pass"=>"aa", "commit"=>"登録"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "aa"], ["LIMIT", 1]]
+  ↳ app/controllers/top_controller.rb:11
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms)
+
+
+  
+BCrypt::Errors::InvalidHash (invalid hash):
+  
+app/controllers/top_controller.rb:13:in `new'
+app/controllers/top_controller.rb:13:in `login'
+Started GET "/" for 157.13.46.105 at 2022-11-16 08:31:20 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by TopController#main as HTML
+  Rendering top/login.html.erb within layouts/application
+  Rendered top/login.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 210ms (Views: 205.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 157.13.46.105 at 2022-11-16 08:31:22 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopController#main as HTML
+  Rendering top/login.html.erb within layouts/application
+  Rendered top/login.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 18ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 157.13.46.105 at 2022-11-16 08:31:25 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 29ms (Views: 26.5ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/users/4" for 157.13.46.105 at 2022-11-16 08:31:27 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"6XBLZ9NgQZl7k+DxQJbGIEH0P4cLYkB/UeKMmbQUV7o6CvzhT0Yiev0La0cJ+LAsxPpAZ7Zlc+XRIGnfSp9/pQ==", "id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:18
+  [1m[36mUser Destroy (1.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 4]]
+  ↳ app/controllers/users_controller.rb:18
+  [1m[35m (5.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:18
+Redirected to https://74438ea6eb3041a292858697b0941bc4.vfs.cloud9.us-east-1.amazonaws.com/
+Completed 302 Found in 16ms (ActiveRecord: 7.3ms)
+
+
+Started GET "/" for 157.13.46.105 at 2022-11-16 08:31:27 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopController#main as HTML
+  Rendering top/login.html.erb within layouts/application
+  Rendered top/login.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 91ms (Views: 90.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 157.13.46.105 at 2022-11-16 08:31:29 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/new" for 157.13.46.105 at 2022-11-16 08:31:30 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 20ms (Views: 19.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 157.13.46.105 at 2022-11-16 08:31:42 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3S7kdfbhupFX4Kw12jLygjPHWXtXzVnoXZtxLpImP0zLTQoR/8e/vBmEAl2JTt/giv5JYtRtM4/DxBiDEZ5s3Q==", "user"=>{"name"=>"aaa", "email"=>"aaa", "pass"=>"aaa"}, "commit"=>"登録"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:12
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "pass", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "aaa"], ["email", "aaa"], ["pass", "$2a$12$C/1E56MoYY4Yrmr9sFqTz.UQvWAmaN9q42oFcZicAbAatSjQQdbtO"], ["created_at", "2022-11-16 08:31:42.566903"], ["updated_at", "2022-11-16 08:31:42.566903"]]
+  ↳ app/controllers/users_controller.rb:12
+  [1m[35m (13.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:12
+Redirected to https://74438ea6eb3041a292858697b0941bc4.vfs.cloud9.us-east-1.amazonaws.com/
+Completed 302 Found in 321ms (ActiveRecord: 14.4ms)
+
+
+Started GET "/" for 157.13.46.105 at 2022-11-16 08:31:42 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopController#main as HTML
+  Rendering top/login.html.erb within layouts/application
+  Rendered top/login.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 18ms (Views: 17.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 157.13.46.105 at 2022-11-16 08:31:46 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/new" for 157.13.46.105 at 2022-11-16 08:31:52 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 157.13.46.105 at 2022-11-16 08:32:02 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DYk2CmGS7D40IsT0idUOxNhdRMAn3u/iEcABLZYSQtMb6thuaLTpE3pGapzaqSOmYWRU2aR+hYWPn2iAFaoRQg==", "user"=>{"name"=>"杉岡", "email"=>"aa", "pass"=>"aa"}, "commit"=>"登録"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:12
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "pass", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "杉岡"], ["email", "aa"], ["pass", "$2a$12$KYbvu30n2AYtoyg72iuaBOJ33Kow1Molhb.8c7HzWhsLVNICvcbV2"], ["created_at", "2022-11-16 08:32:02.928080"], ["updated_at", "2022-11-16 08:32:02.928080"]]
+  ↳ app/controllers/users_controller.rb:12
+  [1m[35m (6.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:12
+Redirected to https://74438ea6eb3041a292858697b0941bc4.vfs.cloud9.us-east-1.amazonaws.com/
+Completed 302 Found in 315ms (ActiveRecord: 7.6ms)
+
+
+Started GET "/" for 157.13.46.105 at 2022-11-16 08:32:03 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopController#main as HTML
+  Rendering top/login.html.erb within layouts/application
+  Rendered top/login.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/top/login" for 157.13.46.105 at 2022-11-16 08:32:11 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dC1u9TwHUQRE1/Qp+IqzVNgck8wF9VEcpw47v3vTFJmnV9lzoCEy58JPf5+x5MVYXRLsLLjyYoYnzN75hVg8hg==", "email"=>"aaa", "pass"=>"aaa", "commit"=>"登録"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "aaa"], ["LIMIT", 1]]
+  ↳ app/controllers/top_controller.rb:11
+Redirected to https://74438ea6eb3041a292858697b0941bc4.vfs.cloud9.us-east-1.amazonaws.com/top/main
+Completed 302 Found in 304ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/top/main" for 157.13.46.105 at 2022-11-16 08:32:11 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopController#main as HTML
+  Rendering top/main.html.erb within layouts/application
+  Rendered top/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 19.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 157.13.46.105 at 2022-11-16 08:32:15 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/top/logout" for 157.13.46.105 at 2022-11-16 08:32:21 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopController#logout as HTML
+Redirected to https://74438ea6eb3041a292858697b0941bc4.vfs.cloud9.us-east-1.amazonaws.com/top/main
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/top/main" for 157.13.46.105 at 2022-11-16 08:32:22 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopController#main as HTML
+  Rendering top/login.html.erb within layouts/application
+  Rendered top/login.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 24ms (Views: 23.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/top/login" for 157.13.46.105 at 2022-11-16 08:32:30 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mM8D3/WHE3Rtb3/wNzKNZHy7kKhE7A4nv/674YAbBu5zMOaUIJhRfqfHVbv+gfuVtVqmteOkykvIsctCUmIEfQ==", "email"=>"aa", "pass"=>"aa", "commit"=>"登録"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "aa"], ["LIMIT", 1]]
+  ↳ app/controllers/top_controller.rb:11
+Redirected to https://74438ea6eb3041a292858697b0941bc4.vfs.cloud9.us-east-1.amazonaws.com/top/main
+Completed 302 Found in 303ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/top/main" for 157.13.46.105 at 2022-11-16 08:32:30 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopController#main as HTML
+  Rendering top/main.html.erb within layouts/application
+  Rendered top/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/top/logout" for 157.13.46.105 at 2022-11-16 08:32:37 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopController#logout as HTML
+Redirected to https://74438ea6eb3041a292858697b0941bc4.vfs.cloud9.us-east-1.amazonaws.com/top/main
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/top/main" for 157.13.46.105 at 2022-11-16 08:32:37 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopController#main as HTML
+  Rendering top/login.html.erb within layouts/application
+  Rendered top/login.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/top/main" for 157.13.46.105 at 2022-11-16 08:35:20 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopController#main as HTML
+  Rendering top/login.html.erb within layouts/application
+  Rendered top/login.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 18ms (Views: 17.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/top/login" for 157.13.46.105 at 2022-11-16 08:35:30 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopController#login as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qiNgfINH7uLUUoHfQuBvojfYeagWwuwo+phSyWmU3qJ5Wdf6H2GNAVLKCmkLjhmustYGSKvF37J6WrePlx/2vQ==", "email"=>"aaa", "pass"=>"aaa", "commit"=>"ログイン"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "aaa"], ["LIMIT", 1]]
+  ↳ app/controllers/top_controller.rb:11
+Redirected to https://74438ea6eb3041a292858697b0941bc4.vfs.cloud9.us-east-1.amazonaws.com/top/main
+Completed 302 Found in 304ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/top/main" for 157.13.46.105 at 2022-11-16 08:35:31 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopController#main as HTML
+  Rendering top/main.html.erb within layouts/application
+  Rendered top/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 27ms (Views: 26.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/top/logout" for 157.13.46.105 at 2022-11-16 08:35:34 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopController#logout as HTML
+Redirected to https://74438ea6eb3041a292858697b0941bc4.vfs.cloud9.us-east-1.amazonaws.com/top/main
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/top/main" for 157.13.46.105 at 2022-11-16 08:35:34 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopController#main as HTML
+  Rendering top/login.html.erb within layouts/application
+  Rendered top/login.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 20ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 157.13.46.105 at 2022-11-16 08:35:36 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 157.13.46.105 at 2022-11-16 08:43:22 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopController#main as HTML
+  Rendering top/login.html.erb within layouts/application
+  Rendered top/login.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 157.13.46.105 at 2022-11-16 08:43:27 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (235.9ms)
+Completed 500 Internal Server Error in 240ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `login_top_path' for #<#<Class:0x00007fb1d804c270>:0x00007fb1e8088c10>
+Did you mean?  top_login_path):
+    15: </p>
+    16: <br>
+    17: <p>
+    18:   <%= link_to "ログイン画面はこちら", login_top_path %>
+    19: </p>
+  
+app/views/users/index.html.erb:18:in `_app_views_users_index_html_erb__1967622493240646762_70201039407660'
+Started GET "/" for 157.13.46.105 at 2022-11-16 08:44:06 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by TopController#main as HTML
+  Rendering top/login.html.erb within layouts/application
+  Rendered top/login.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 18ms (Views: 17.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 157.13.46.105 at 2022-11-16 08:44:09 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:3
+  Rendered users/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 36ms (Views: 34.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/top/login" for 157.13.46.105 at 2022-11-16 08:44:12 +0000
+Cannot render console from 157.13.46.105! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/top/login"):
+  
+actionpack (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddAdminToUsers (20221116085239)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[35mALTER TABLE "users" ADD "admin" boolean[0m
+  ↳ db/migrate/20221116085239_add_admin_to_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221116085239"]]
+  ↳ bin/rails:9
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
