@@ -2,7 +2,7 @@
     <%= f.label :name, 'お名前' %>
     <%= f.text_field :name %>
     <%= f.label :breeds, '犬種' %>
-    <!--ここ犬種が多いとコードが大変なことになるから要検討 対処は別PRでやるかも-->
+    <!--ここ犬種が多いとコードが大変なことになるから要検討 対処は別PRでやる。一旦このままで。-->
     <%= f.select :breeds, [['柴犬'], ['チワワ'], ['パピヨン']], include_blank: true %>
     <%= f.label :sex, '性別' %>
     <%= f.select :sex, [['男の子'], ['女の子']], include_blank: true %>
