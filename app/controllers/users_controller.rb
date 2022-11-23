@@ -2,21 +2,24 @@ class UsersController < ApplicationController
   def index
     @users = User.all
   end
+  
+  def show
+    @user = User.find(params[:id])
+  end
 
   def new
     @user = User.new
   end
   
   def create
-    @user = User.new(name: params[:user][:name], email: params[:user][:email], pass: BCrypt::Password.create(params[:user][:pass]))
-    @user.save
-    redirect_to '/'
-  end
-  
-  def destroy
-    @user = User.find(params[:id])
-    @user.destroy
-    redirect_to '/'
+    @user = User.new(user_params)
+    if @user.save
+      flash[:success] = '登録が完了しました'
+      redirect_to '/'
+    else
+      flash[:danger] = '登録に失敗しました'
+      render 'new'
+    end
   end
   
   def edit
@@ -25,7 +28,24 @@ class UsersController < ApplicationController
   
   def update
     @user = User.find(params[:id])
-    @user = User.update(name: params[:user][:name], email: params[:user][:email])
+    @user = User.update(user_params)
     redirect_to '/'
+  end
+  
+  def destroy
+    @user = User.find(params[:id])
+    if @user.destroy
+      flash[:success] = 'userの退会に成功しました'
+    else
+      flash[:danger] = 'userの退会に失敗しました'
+      render 'edit'
+    end
+    redirect_to '/'
+  end
+  
+  private
+  
+  def user_params
+    params.require(:user).permit(:name, :email, :password)
   end
 end
