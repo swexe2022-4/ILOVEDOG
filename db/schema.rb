@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 2022_11_23_064822) do
+=======
+ActiveRecord::Schema.define(version: 2022_11_16_071702) do
+>>>>>>> da4a416dc0d88633c0ee785479c1d2ba43062478
 
   create_table "dogs", force: :cascade do |t|
     t.string "name"
@@ -23,6 +27,7 @@ ActiveRecord::Schema.define(version: 2022_11_23_064822) do
     t.integer "user_id"
   end
 
+<<<<<<< HEAD
   create_table "users", force: :cascade do |t|
     t.string "name"
     t.string "email"
@@ -33,4 +38,6 @@ ActiveRecord::Schema.define(version: 2022_11_23_064822) do
     t.boolean "admin", default: false
   end
 
+=======
+>>>>>>> da4a416dc0d88633c0ee785479c1d2ba43062478
 end
