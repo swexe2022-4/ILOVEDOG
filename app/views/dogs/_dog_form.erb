@@ -1,0 +1,16 @@
+<%= form_for @dog, url: { action: action } do |f| %>
+    <%= f.label :name, 'お名前' %>
+    <%= f.text_field :name %>
+    <%= f.label :breeds, '犬種' %>
+    <!--ここ犬種が多いとコードが大変なことになるから要検討 対処は別PRでやる。一旦このままで。-->
+    <%= f.select :breeds, [['柴犬'], ['チワワ'], ['パピヨン']], include_blank: true %>
+    <%= f.label :sex, '性別' %>
+    <%= f.select :sex, [['男の子'], ['女の子']], include_blank: true %>
+    <%= f.label :weight, '体重' %>
+    <%= f.text_field :weight %>
+    <%= f.label :birthday, "生年月日" %><br>
+    <%= f.date_select :birthday, {start_year: 1990, end_year: 2022,
+    include_blank: true, use_two_digit_numbers: true},
+    {class: "input-tab birthday-select"}%>
+    <%= submit_tag submit_message %>
+<% end %>
