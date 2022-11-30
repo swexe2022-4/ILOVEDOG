@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   resources :users
-  root 'top#main'
+  root   'static_pages#home'
+  # root 'top#main'
   get 'top/main'
+  get 'top/login'
   post 'top/login'
   get 'top/logout'
   #get 'users/index'

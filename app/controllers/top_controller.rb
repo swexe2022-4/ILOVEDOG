@@ -1,4 +1,5 @@
 class TopController < ApplicationController
+  include TopHelper
   def main
     if session[:email]
       render 'main'
@@ -6,24 +7,27 @@ class TopController < ApplicationController
       render 'login'
     end
   end
+  
+  def logout
+    session.delete(:email)
+    redirect_to root_path
+  end
 
-  def login
-    user = User.find_by(email: params[:email])
-    if user
-      login_password = BCrypt::Password.new(user.pass)
-      if login_password == params[:pass]
-        session[:email] = user.email
-        redirect_to top_main_path
-      else
-        render 'login'
-      end
+  def create
+    user = User.find_by(email: params[:session][:email].downcase)
+    if user&.authenticate(params[:session][:password])
+      log_in user
+      user_remember(user) if params[:session][:remember_me]
+      redirect_back_or current_user
     else
-      render 'login'
+      flash.now[:danger] = 'メールアドレスまたはパスワードが正しくありません'
+      render 'client_new'
     end
   end
   
   def logout
     session.delete(:email)
-    redirect_to top_main_path
-  end 
+    redirect_to root_path
+  end
+
 end
