@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   #get 'users/index'
   #get 'users/new'
   #get 'users/edit'
@@ -10,4 +11,5 @@ Rails.application.routes.draw do
   delete '/logout',   to: 'top#destroy'
   resources :users
   resources :dogs
+  resources :items
 end

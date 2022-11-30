@@ -6,7 +6,7 @@ class ItemsController < ApplicationController
         @item = Item.new
     end
     def create
-        @item = Item.new(name: params[:item][:name], country_of_origin: params[:item][:country_of_origin], target_age: params[:item][:target_age], grams: params[:item][:grams], price: params[:item][:price], category: params[:item][:category], img: params[:item][:img])
+        @item = Item.new(item_params)
         @item.save
         redirect_to '/'
     end
@@ -20,7 +20,14 @@ class ItemsController < ApplicationController
     end
     def update
         @item = Item.find(params[:id])
-        @item = Item.update(name: params[:item][:name], country_of_origin: params[:item][:country_of_origin], target_age: params[:item][:target_age], grams: params[:item][:grams], price: params[:item][:price], category: params[:item][:category], img: params[:item][:img])
+        @item = Item.update(item_params)
         redirect_to '/'
+    end
+    
+    
+    private
+    
+    def item_params
+        params.require(:item).permit(:name, :country_of_origin, :target_age, :grams, :price, :category, :img)
     end
 end
