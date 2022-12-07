@@ -2,13 +2,13 @@
 <p>商品の一覧表示画面です</p>
 <% @item.each do |f| %>
 <p>
-  <%= f.name %>
-  <%= f.country_of_origin %>
-  <%= f.target_age %>
-  <%= f.grams %>
-  <%= f.price %>
-  <%= f.category %>
-  <%= f.img %>
+  <%= f.name %><br>
+  <%= f.country_of_origin %><br>
+  <%= f.target_age %><br>
+  <%= f.grams %><br>
+  <%= f.price %><br>
+  <%= f.category %><br>
+  <%= f.img %><br>
   <%= link_to '削除', item_path(f.id), method: :delete %>
   <%= link_to '編集', edit_item_path(f.id) %>
 </p>
