@@ -1,29 +1,20 @@
 class TopController < ApplicationController
-  def main
-    if session[:email]
-      render 'main'
+  
+  def new; end
+
+  def create
+    user = User.find_by(email: params[:email].downcase)
+    if user&.authenticate(params[:password])
+      log_in user
+      redirect_to user
     else
-      render 'login'
+      flash.now[:danger] = 'Invalid email/password combination'
+      render 'new'
     end
   end
 
-  def login
-    user = User.find_by(email: params[:email])
-    if user
-      login_password = BCrypt::Password.new(user.pass)
-      if login_password == params[:pass]
-        session[:email] = user.email
-        redirect_to top_main_path
-      else
-        render 'login'
-      end
-    else
-      render 'login'
-    end
+  def destroy
+    log_out if logged_in?
+    redirect_to root_url
   end
-  
-  def logout
-    session.delete(:email)
-    redirect_to top_main_path
-  end 
 end

@@ -4,7 +4,6 @@
 <p>
   <%= f.name %>
   <%= f.email %>
-  <%= f.pass %>
   <%= link_to '削除', user_path(f.id), method: :delete %>
   <%= link_to '編集', edit_user_path(f.id) %>
 </p>
@@ -15,5 +14,5 @@
 </p>
 <br>
 <p>
-  <%= link_to "ログイン画面はこちら", top_login_path %>
+  <%= link_to "ログイン画面はこちら", login_path %>
 </p>

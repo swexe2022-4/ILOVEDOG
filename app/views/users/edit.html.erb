@@ -1,14 +1,25 @@
-<h1>編集</h1>
-<p>ユーザーの編集画面です</p>
 <%= form_for @user, action: :update do |f| %>
-<p>
-  <%= f.label :name, '名前' %>
-  <%= f.text_field :name %>
-</p>
-<p>
-  <%= f.label :email, 'メールアドレス' %>
-  <%= f.text_field :email %>
-</p>
-  <%= f.submit "更新"%>
-
+  <div class="mx-auto" style="width: 30rem; margin: 5em 0 ;">
+    <div class="card" style="width: 30rem;">
+      <div class="card-body">
+        <div class='border-bottom'>
+          <h5 class="card-title">Profile 編集</h5>
+        </div>
+        <p class="card-text">
+          <p>
+            <%= f.label :name, '名前　　　　　' %>
+            <%= f.text_field :name, :size=>'30'%>
+          </p>
+          <p>
+            <%= f.label :email, 'メールアドレス' %>
+            <%= f.text_field :email, :size=>'30'%>
+          </p>
+          <p>
+            <%= f.label :description, '自己紹介' %>
+            <%= f.text_area :description ,  class: 'form-control',size: "20x10"%>
+          </p>
+          <%= f.submit '更新', class: "btn btn-outline-primary"%>
+        </p>
+    </div>
+  </div>
 <% end %>
