@@ -1,6 +1,8 @@
 <% @dogs.each do |dog| %>
-    <div>
+    <div class="card">
+      <div class="card-body">
         <%= link_to "#{dog.name}", dog_path(dog.id) %>
+      </div>
     </div>
 <% end %>
 <p> <%= link_to '犬を新規登録する', new_dog_path %> </p>
