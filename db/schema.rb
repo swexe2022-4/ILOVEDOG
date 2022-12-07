@@ -23,6 +23,18 @@ ActiveRecord::Schema.define(version: 2022_11_30_083312) do
     t.integer "user_id"
   end
 
+  create_table "items", force: :cascade do |t|
+    t.string "name"
+    t.string "country_of_origin"
+    t.string "target_age"
+    t.integer "grams"
+    t.integer "price"
+    t.string "category"
+    t.string "img"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "name"
     t.string "email"
