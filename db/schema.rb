@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_11_23_064822) do
+ActiveRecord::Schema.define(version: 2022_11_30_083312) do
 
   create_table "dogs", force: :cascade do |t|
     t.string "name"
@@ -26,10 +26,11 @@ ActiveRecord::Schema.define(version: 2022_11_23_064822) do
   create_table "users", force: :cascade do |t|
     t.string "name"
     t.string "email"
-    t.string "pass"
     t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.boolean "admin", default: false
+    t.string "password_digest"
   end
+
 end
