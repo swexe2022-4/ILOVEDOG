@@ -1,9 +1,21 @@
-<%= link_to 'ユーザーページ', users_path %><br>
-
 <%= form_tag '/login', method: :post do %>
-    <%= label_tag :email, 'メールアドレス' %>
-    <%= text_field_tag :email %>
-    <%= label_tag :password, 'パスワード' %>
-    <%= password_field_tag :password %>
-    <%= submit_tag 'ログイン' %>
+  <div class="mx-auto" style="width: 30rem; margin: 5em 0 ;">
+    <div class="card" style="width: 30rem;">
+      <div class="card-body">
+        <div class='border-bottom'>
+          <h5 class="card-title">ログイン</h5>
+        </div>
+        <p class="card-text">
+          <p>
+            <%= label_tag :email, 'メールアドレス' %>
+            <%= text_field_tag :email%>
+          </p>
+          <p>
+            <%= label_tag :password, 'パスワード' %>
+            <%= password_field_tag :password, :size=>'30'%>
+          </p>
+          <%= submit_tag 'ログイン', class: "btn btn-outline-primary"%>
+        </p>
+    </div>
+  </div>
 <% end %>

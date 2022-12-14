@@ -13,7 +13,7 @@
               <%= link_to 'マイページ', current_user, class: "btn btn-primary" %>
             </li>
             <li class="nav-item">
-              <%= link_to 'ログアウト', current_user, class: "btn btn-primary", method: :delete %>
+              <%= link_to 'ログアウト', logout_path, class: "btn btn-primary", method: :delete %>
             </li>
           <% else %>
             <li class="nav-item">
