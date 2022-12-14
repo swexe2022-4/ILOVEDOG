@@ -1,29 +1,48 @@
 <h1>新規追加</h1>
 <p>商品の新規追加画面です</p>
 <%= form_for @item, action: :create do |f| %>
-<p>
-    <%= f.label :name, '商品名' %>
-    <%= f.text_field :name %>
-    <br>
-    <%= f.label :country_of_origin, '原産国' %>
-    <%= f.text_field :country_of_origin %>
-    <br>
-    <%= f.label :target_age, '対応年齢' %>
-    <%= f.text_field :target_age %>
-    <br>
-    <%= f.label :grams, '内容量' %>
-    <%= f.text_field :grams %>
-    <br>
-    <%= f.label :price, '価格' %>
-    <%= f.text_field :price %>
-    <br>
-    <%= f.label :category, 'ジャンル' %>
-    <%= f.text_field :category %>
-    <br>
-    <%= f.label :img, '画像' %>
-    <%= f.text_field :img %>
-</p>
-<br>
-<%= f.submit "登録"%>
+   <div class="mx-auto" style="width: 30rem; margin: 5em 0 ;">
+    <div class="card" style="width: 30rem;">
+      <div class="card-body">
+        <div class='border-bottom'>
+          <h5 class="card-title"><%= title %></h5>
+        </div>
+        <p class="card-text">
+          <p>
+            <%= f.label :name, '商品名' %>
+            <%= f.text_field :name, :size=>'30'%>
+          </p>
+          <p>
+            <%= f.label :country_of_origin, '原産国' %>
+            <%= f.text_field :country_of_origin, :size=>'30'%>
+          </p>
+          <p>
+            <%= f.label :target_age, '対応年齢' %>
+            <%= f.text_field :target_age, :size=>'30'%>
+          </p>
+          <p>
+            <%= f.label :grams, '内容量' %>
+            <%= f.text_field :grams, :size=>'30'%>
+            <%= f.text_area :description ,  class: 'form-control',size: "20x10"%>
+          </p>
+          <p>
+            <%= f.label :price, '価格' %>
+            <%= f.text_field :price, :size=>'30' %>
+          </p>
+          <p>
+            <%= f.label :category, 'ジャンル' %>
+            <%= f.text_field :category, :size=>'30' %>
+          </p>
+          <p>
+            <%= f.label :img, '画像' %>
+            <%= f.text_field :img %>
+          </p>
+          <%= f.submit submit, class: "btn btn-outline-primary"%>
+        </p>
+    </div>
+  </div>
+
+  <br>
+  <%= f.submit "登録"%>
 
 <% end %>
