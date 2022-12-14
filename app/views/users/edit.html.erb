@@ -1,14 +1,1 @@
-<h1>編集</h1>
-<p>ユーザーの編集画面です</p>
-<%= form_for @user, action: :update do |f| %>
-<p>
-  <%= f.label :name, '名前' %>
-  <%= f.text_field :name %>
-</p>
-<p>
-  <%= f.label :email, 'メールアドレス' %>
-  <%= f.text_field :email %>
-</p>
-  <%= f.submit "更新"%>
-
-<% end %>
+<%= render partial: 'form', locals: { action: 'update', title: 'Profile 編集', submit: '更新' } %>

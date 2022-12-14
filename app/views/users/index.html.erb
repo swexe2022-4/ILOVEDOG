@@ -1,13 +1,6 @@
 <h1>ユーザー一覧</h1>
-<p>ユーザーの一覧表示画面です</p>
-<% @users.each do |f| %>
-<p>
-  <%= f.name %>
-  <%= f.email %>
-  <%= f.pass %>
-  <%= link_to '削除', user_path(f.id), method: :delete %>
-  <%= link_to '編集', edit_user_path(f.id) %>
-</p>
+<% @users.each do |user| %>
+  <%= render partial: 'form2', locals: { user: user } %>
 <% end %>
 
 <p>
@@ -15,5 +8,5 @@
 </p>
 <br>
 <p>
-  <%= link_to "ログイン画面はこちら", top_login_path %>
+  <%= link_to "ログイン画面はこちら", login_path %>
 </p>
