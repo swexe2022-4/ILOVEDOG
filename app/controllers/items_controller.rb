@@ -6,7 +6,7 @@ class ItemsController < ApplicationController
         @item = Item.new
     end
     def create
-        @item = Item.new(name: params[:item][:name],)# email: params[:user][:email], pass: BCrypt::Password.create(params[:user][:pass]))
+        @item = Item.new(name: params[:item][:name], country_of_origin: params[:item][:country_of_origin], target_age: params[:item][:target_age], grams: params[:item][:grams], price: params[:item][:price], category: params[:item][:category], img: params[:item][:img])
         @item.save
         redirect_to '/'
     end
@@ -20,7 +20,7 @@ class ItemsController < ApplicationController
     end
     def update
         @item = Item.find(params[:id])
-        @item = Item.update(name: params[:item][:name],)# email: params[:user][:email])
+        @item = Item.update(name: params[:item][:name], country_of_origin: params[:item][:country_of_origin], target_age: params[:item][:target_age], grams: params[:item][:grams], price: params[:item][:price], category: params[:item][:category], img: params[:item][:img])
         redirect_to '/'
     end
 end
