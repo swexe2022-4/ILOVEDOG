@@ -1,16 +1,39 @@
-<%= form_for @dog, url: { action: action } do |f| %>
-    <%= f.label :name, 'お名前' %>
-    <%= f.text_field :name %>
-    <%= f.label :breeds, '犬種' %>
-    <!--ここ犬種が多いとコードが大変なことになるから要検討 対処は別PRでやる。一旦このままで。-->
-    <%= f.select :breeds, [['柴犬'], ['チワワ'], ['パピヨン']], include_blank: true %>
-    <%= f.label :sex, '性別' %>
-    <%= f.select :sex, [['男の子'], ['女の子']], include_blank: true %>
-    <%= f.label :weight, '体重' %>
-    <%= f.text_field :weight %>
-    <%= f.label :birthday, "生年月日" %><br>
-    <%= f.date_select :birthday, {start_year: 1990, end_year: 2022,
-    include_blank: true, use_two_digit_numbers: true},
-    {class: "input-tab birthday-select"}%>
-    <%= submit_tag submit_message %>
+<%= form_for @dog, action: action do |f| %>
+  <div class="mx-auto" style="width: 30rem; margin: 5em 0 ;">
+    <div class="card" style="width: 30rem;">
+      <div class="card-body">
+        <div class='border-bottom'>
+          <h5 class="card-title"><%= title %></h5>
+        </div>
+        <p class="card-text">
+          <p>
+            <%= f.label :name, 'お名前' %>
+            <%= f.text_field :name, :size=>'30'%>
+          </p>
+          <p>
+            <%= f.label :breeds, '犬種' %>
+            <%= f.text_field :breeds, :size=>'30', include_blank: true %>
+          </p>
+          <p>
+            <%= f.label :sex, '性別' %>
+            <%= f.select :sex, [['男の子'], ['女の子']], include_blank: true %>
+          </p>
+          <p>
+            <%= f.label :weight, '体重' %>
+            <%= f.text_field :weight %> kg
+          </p>
+          <p>
+            <%= f.label :birthday, '生年月日' %>
+            <%= f.date_select :birthday, {start_year: 1990, end_year: 2022,
+            include_blank: true, use_two_digit_numbers: true},
+            {class: "input-tab birthday-select"}%>
+          </p>
+          <%= f.hidden_field :user_id, :value => current_user.id %>
+          <%= f.submit submit, class: "btn btn-outline-primary"%>
+          <% if action=='update' %>
+            <%= link_to '削除', dog_path(@dog.id), method: :delete, class: "btn btn-outline-primary"%>
+          <% end %>
+        </p>
+    </div>
+  </div>
 <% end %>

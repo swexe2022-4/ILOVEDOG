@@ -12,14 +12,22 @@
       </p>
     </div>
     <ul class="list-group list-group-flush">
-      <li class="list-group-item">犬１の情報</li>
-      <li class="list-group-item">犬２の情報</li>
-      <li class="list-group-item">犬３の情報</li>
+      <% @dogs&.each do |dog| %>
+        <li class="list-group-item">
+          <%= dog.name %></br>
+          <%= dog.id %></br>
+          <%= dog.breeds %></br>
+          <%= dog.sex %></br>
+          <%= "#{dog.weight}kg" %></br>
+          <%= "#{(Date.today.strftime("%Y%m%d").to_i - dog.birthday.strftime("%Y%m%d").to_i) / 10000} 才"%>
+          </br><%= link_to '編集', edit_dog_path(id: dog.id), class: "btn btn-primary" %>
+        </li>
+      <% end %>
     </ul>
     <% if current_user %>
       <div class="card-body">
         <%= link_to '人間の編集', edit_user_path(user.id), class: "btn btn-primary" %>
-        <%= link_to '犬の編集', edit_user_path(user.id), class: "btn btn-primary" %>
+        <%= link_to '犬の登録', new_dog_path, class: "btn btn-primary" %>
       </div>
     <% end %>
   </div>
