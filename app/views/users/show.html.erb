@@ -1,1 +1,6 @@
 <%= render partial: 'form2', locals: { user: @user } %>
+
+<p>
+  <%= current_user.id.class %>
+  <%= params[:id].class%>
+</p>

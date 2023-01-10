@@ -11,7 +11,7 @@ module TopHelper
   
   def correct_user
     redirect_to root_url, 
-    flash: { danger: '正しいユーザーでログインしてください' } unless current_user&.id == params[:id]
+    flash: { danger: '正しいユーザーでログインしてください' } unless current_user&.id == params[:id].to_i
   end
   
   def correct_dog
