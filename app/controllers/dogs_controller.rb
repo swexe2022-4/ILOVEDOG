@@ -1,4 +1,7 @@
 class DogsController < ApplicationController
+  before_action :current_user,  only: %i[new create]
+  before_action :correct_dog,  only: %i[edit update destroy]
+  
   def index
     @dogs = Dog.all
   end
@@ -14,7 +17,7 @@ class DogsController < ApplicationController
   def create
     @dog = Dog.new(dog_params)
     if @dog.save
-      redirect_to root_path
+      redirect_to current_user
     else
       flash[:danger] = '失敗しました'
       render 'new'
@@ -22,25 +25,25 @@ class DogsController < ApplicationController
   end
 
   def edit
-    @dog = Dog.find_by(params[:id])
+    @dog = Dog.find(params[:id])
   end
 
   def update
-    @dog = Dog.find_by(params[:id])
+    @dog = Dog.find(params[:id])
     if @dog.update(dog_params)
       flash[:success] = '更新が完了しました'
-      redirect_to dog_path(params[:id])
+      redirect_to current_user
     else
       render 'edit'
     end
   end
   
   def destroy
-    @dog = Dog.find_by(params[:id])
+    @dog = Dog.find(params[:id])
     if @dog.destroy
-      redirect_to root_path
+      redirect_to current_user
     else
-      redirect_to root_path
+      redirect_to 'edit'
     end
   end
 

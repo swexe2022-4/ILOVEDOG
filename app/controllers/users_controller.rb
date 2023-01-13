@@ -1,10 +1,13 @@
 class UsersController < ApplicationController
+  before_action :correct_user,  only: %i[edit update destroy]
+  
   def index
     @users = User.all
   end
   
   def show
     @user = User.find(params[:id])
+    @dogs = Dog.where(user_id: @user.id)
   end
 
   def new

@@ -8,6 +8,15 @@ module TopHelper
       @current_user ||= User.find_by(id: user_id)
     end
   end
+  
+  def correct_user
+    redirect_to root_url, 
+    flash: { danger: '正しいユーザーでログインしてください' } unless current_user&.id == params[:id].to_i
+  end
+  
+  def correct_dog
+    redirect_to root_url, flash: { danger: '正しいユーザーでログインしてください' } unless current_user&.id == Dog.find(params[:id]).user.id
+  end
 
   def logged_in?
     !current_user.nil?
