@@ -1,0 +1,9 @@
+<% @reviews.each do |f| %>
+<p>
+  <%= f.title %><br>
+  <%= f.body %><br>
+  <%= link_to '削除', review_path(f.id), method: :delete %>
+  <%= link_to '編集', edit_review_path(f.id) %>
+</p>
+<% end %>
+<p> <%= link_to 'レビューを新規登録する', new_review_path %> </p>
