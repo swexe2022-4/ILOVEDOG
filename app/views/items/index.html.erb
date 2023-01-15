@@ -1,6 +1,6 @@
 <h1>商品一覧</h1>
 <p>商品の一覧表示画面です</p>
-<% @item.each do |f| %>
+<% @items.each do |f| %>
 <p>
   <%= f.name %><br>
   <%= f.country_of_origin %><br>
@@ -15,5 +15,5 @@
 <% end %>
 
 <p>
-    <%= link_to "新規登録", new_item_path %>
+    <%= link_to "商品の新規登録", new_item_path %>
 </p>
