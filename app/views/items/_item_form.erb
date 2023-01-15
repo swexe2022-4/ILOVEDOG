@@ -1,0 +1,43 @@
+<%= form_for @item, action: action do |f| %>
+   <div class="mx-auto" style="width: 30rem; margin: 5em 0 ;">
+    <div class="card" style="width: 30rem;">
+      <div class="card-body">
+        <div class='border-bottom'>
+          <h5 class="card-title"><%= title %></h5>
+        </div>
+        <p class="card-text">
+          <p>
+            <%= f.label :name, '商品名' %>
+            <%= f.text_field :name, :size=>'30'%>
+          </p>
+          <p>
+            <%= f.label :country_of_origin, '原産国' %>
+            <%= f.select :country_of_origin, [['test1'], ['test2'], ['test3']], include_blank: true %>
+          </p>
+          <p>
+            <%= f.label :target_age, '対応年齢' %>
+            <%= f.select :target_age, [['test1'], ['test2'], ['test3']], include_blank: true %>
+          </p>
+          <p>
+            <%= f.label :grams, '内容量' %>
+            <%= f.text_field :grams, :size=>'30'%>
+          </p>
+          <p>
+            <%= f.label :price, '価格' %>
+            <%= f.text_field :price, :size=>'30' %>
+          </p>
+          <p>
+            <%= f.label :category, 'ジャンル' %>
+            <%= f.select :category, [['test1'], ['test2'], ['test3']], include_blank: true %>
+          </p>
+          <p>
+            <%= f.label :img, '画像' %>
+            <%= f.text_field :img %>
+          </p>
+          <%= f.submit submit, class: "btn btn-outline-primary"%>
+        </p>
+    </div>
+  </div>
+</div>
+
+<% end %>

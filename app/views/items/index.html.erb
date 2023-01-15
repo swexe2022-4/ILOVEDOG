@@ -1,0 +1,19 @@
+<h1>商品一覧</h1>
+<p>商品の一覧表示画面です</p>
+<% @items.each do |f| %>
+<p>
+  <%= f.name %><br>
+  <%= f.country_of_origin %><br>
+  <%= f.target_age %><br>
+  <%= f.grams %><br>
+  <%= f.price %><br>
+  <%= f.category %><br>
+  <%= f.img %><br>
+  <%= link_to '削除', item_path(f.id), method: :delete %>
+  <%= link_to '編集', edit_item_path(f.id) %>
+</p>
+<% end %>
+
+<p>
+    <%= link_to "商品の新規登録", new_item_path %>
+</p>
