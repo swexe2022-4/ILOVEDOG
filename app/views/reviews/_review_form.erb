@@ -1,0 +1,23 @@
+<%= form_for @review, action: action do |f| %>
+  <div class="mx-auto" style="width: 30rem; margin: 5em 0 ;">
+    <div class="card" style="width: 30rem;">
+      <div class="card-body">
+        <div class='border-bottom'>
+          <h5 class="card-title"><%= title %></h5>
+        </div>
+        <p class="card-text">
+          <p>
+            <%= f.label :title, 'タイトル' %>
+            <%= f.text_field :title, :size=>'30'%>
+          </p>
+          <p>
+            <%= f.label :body, '本文' %>
+            <%= f.text_field :body, include_blank: true %>
+          </p>
+        
+          <%= f.submit submit, class: "btn btn-outline-primary"%>
+          
+        </p>
+    </div>
+  </div>
+<% end %>

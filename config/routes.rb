@@ -13,4 +13,5 @@ Rails.application.routes.draw do
   resources :users
   resources :dogs
   resources :items
+  resources :reviews
 end

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_12_14_075640) do
+ActiveRecord::Schema.define(version: 2023_01_15_041127) do
 
   create_table "dogs", force: :cascade do |t|
     t.string "name"
@@ -35,6 +35,15 @@ ActiveRecord::Schema.define(version: 2022_12_14_075640) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "reviews", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "item_id"
+    t.string "title"
+    t.text "body"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "name"
     t.string "email"
@@ -44,4 +53,5 @@ ActiveRecord::Schema.define(version: 2022_12_14_075640) do
     t.boolean "admin", default: false
     t.string "password_digest"
   end
+
 end
