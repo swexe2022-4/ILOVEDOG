@@ -1,1 +1,77 @@
-<h1>ホーム</h1>
+<div class="d-flex flex-column bd-highlight mb-3 mt-3 align-items-center">
+  <h2>おすすめの商品</h2>
+</div>
+<div class="d-flex justify-content-around" style="margin: 1em 1rem ;">
+  <% @items.each do |f| %>
+    <div class="card" style="width: 30rem; margin: 1em 1rem ;">
+      <div class="card-body">
+        <div class='border-bottom'>
+          <h5 class="card-title"><%= f.name %></h5>
+        </div>
+        <p class="card-text">
+          <p>
+            原産国：　　<%= f.country_of_origin %><br>
+            対応年齢：　<%= f.target_age %><br>
+            内容量：　　<%= f.grams %><br>
+            価格：　　　<%= f.price %><br>
+            カテゴリー：<%= f.category %>
+          </p>
+        </p>
+      </div>
+      <%= link_to 'レビューを見る', item_path(f.id), class: "btn btn-primary" %>
+    </div>
+  <% end %>
+</div>
+
+<form action="/items" method="get">
+  <div class="d-flex flex-column bd-highlight mb-3 align-items-center">
+    <div class="col-md-4 d-flex align-items-center justify-content-center">
+      <h2>詳細検索</h2>
+    </div>
+    <div class="card mb-4" style='width: 50rem; margin: 1em 1rem'>
+      <div class="row g-0">
+        <div class="col-md-4 text-dark bg-light d-flex align-items-center bg-info justify-content-center">
+          target_age
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <input type="checkbox" name="target_age[]" value='妊娠期／授乳期用フード' <%= "checked" if params[:target_age]&.include?('妊娠期／授乳期用フード') %>>妊娠期／授乳期用フード</br>
+            <input type="checkbox" name="target_age[]" value='幼時期／成長期用フード' <%= "checked" if params[:target_age]&.include?('幼時期／成長期用フード') %>>幼時期／成長期用フード</br>
+            <input type="checkbox" name="target_age[]" value='維持期フード' <%= "checked" if params[:target_age]&.include?('維持期フード') %>>維持期フード</br>
+            <input type="checkbox" name="target_age[]" value='シニア期用フード' <%= "checked" if params[:target_age]&.include?('シニア期用フード') %>>シニア期用フード</br>
+            <input type="checkbox" name="target_age[]" value='全年齢対応' <%= "checked" if params[:target_age]&.include?('全年齢対応') %>>全年齢対応<br>
+          </div>
+        </div>
+        <div class="col-md-4 text-dark bg-light d-flex align-items-center bg-info justify-content-center">
+          category
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <input type="checkbox" name="category[]" value='ドライ' <%= "checked" if params[:category]&.include?('ドライ') %>>ドライ</br>
+            <input type="checkbox" name="category[]" value='ソフトドライ' <%= "checked" if params[:category]&.include?('ソフトドライ') %>>ソフトドライ</br>
+            <input type="checkbox" name="category[]" value='セミモイスト' <%= "checked" if params[:category]&.include?('セミモイスト') %>>セミモイスト</br>
+            <input type="checkbox" name="category[]" value='ウェット缶詰' <%= "checked" if params[:category]&.include?('ウェット缶詰') %>>ウェット缶詰</br>
+            <input type="checkbox" name="category[]" value='アレルギー対応' <%= "checked" if params[:category]&.include?('アレルギー対応詰') %>>アレルギー対応</br>
+            <input type="checkbox" name="category[]" value='おやつ' <%= "checked" if params[:category]&.include?('おやつ') %>>おやつ<br>
+          </div>
+        </div>
+        <div class="col-md-4 text-dark bg-light d-flex align-items-center bg-info justify-content-center">
+          country_of_origin
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <input type="checkbox" name="country_of_origin[]" value='日本' <%= "checked" if params[:country_of_origin]&.include?('日本ド') %>>日本</br>
+            <input type="checkbox" name="country_of_origin[]" value='アメリカ' <%= "checked" if params[:country_of_origin]&.include?('アメリカ') %>>アメリカ</br>
+            <input type="checkbox" name="country_of_origin[]" value='ドイツ'' <%= "checked" if params[:country_of_origin]&.include?('ドイツ') %>>ドイツ'</br>
+            <input type="checkbox" name="country_of_origin[]" value='イギリス' <%= "checked" if params[:country_of_origin]&.include?('イギリス') %>>イギリス</br>
+            <input type="checkbox" name="country_of_origin[]" value='スウェーデン' <%= "checked" if params[:country_of_origin]&.include?('スウェーデン') %>>スウェーデン</br>
+            <input type="checkbox" name="country_of_origin[]" value='カナダ' <%= "checked" if params[:country_of_origin]&.include?('カナダ') %>>カナダ</br>
+            <input type="checkbox" name="country_of_origin[]" value='スイス' <%= "checked" if params[:country_of_origin]&.include?('スイス詰') %>>スイス</br>
+            <input type="checkbox" name="country_of_origin[]" value='ニュージーランド' <%= "checked" if params[:country_of_origin]&.include?('ニュージーランド') %>>ニュージーランド</br>
+            <input type="checkbox" name="country_of_origin[]" value='オーストラリア' <%= "checked" if params[:country_of_origin]&.include?('オーストラリア') %>>オーストラリア<br>
+          </div>
+        </div>
+      </div>
+      <input type="submit" value="絞り込む" class='btn btn-primary'>
+    </div>
+</form>

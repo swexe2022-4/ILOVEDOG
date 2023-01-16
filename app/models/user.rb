@@ -1,5 +1,7 @@
 class User < ApplicationRecord
   has_many :dogs, dependent: :destroy
+  has_many :items
+  has_many :reviews, through: :items
   
   before_save { self.email = email.downcase }
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
@@ -8,8 +10,6 @@ class User < ApplicationRecord
                        format: { with: VALID_EMAIL_REGEX },
                        uniqueness: { case_sensitive: false }
 
-  # 記憶トークンをハッシュ化するための関数
-  # ここcostじゃなくてcost: ???
   def self.digest(string)
     cost = if ActiveModel::SecureRandom.min_cost
              BCrypt::Engine::MIN_COST

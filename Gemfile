@@ -5,6 +5,7 @@ ruby '2.6.3'
 
 gem 'jquery-rails'
 gem 'bootstrap'
+gem 'ransack'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.8', '>= 5.2.8.1'
 # Use sqlite3 as the database for Active Record

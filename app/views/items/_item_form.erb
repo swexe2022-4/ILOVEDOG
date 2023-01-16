@@ -7,37 +7,41 @@
         </div>
         <p class="card-text">
           <p>
-            <%= f.label :name, '商品名' %>
-            <%= f.text_field :name, :size=>'30'%>
-          </p>
-          <p>
-            <%= f.label :country_of_origin, '原産国' %>
-            <%= f.select :country_of_origin, [['test1'], ['test2'], ['test3']], include_blank: true %>
-          </p>
-          <p>
-            <%= f.label :target_age, '対応年齢' %>
-            <%= f.select :target_age, [['test1'], ['test2'], ['test3']], include_blank: true %>
-          </p>
-          <p>
-            <%= f.label :grams, '内容量' %>
-            <%= f.text_field :grams, :size=>'30'%>
-          </p>
-          <p>
-            <%= f.label :price, '価格' %>
-            <%= f.text_field :price, :size=>'30' %>
-          </p>
-          <p>
-            <%= f.label :category, 'ジャンル' %>
-            <%= f.select :category, [['test1'], ['test2'], ['test3']], include_blank: true %>
-          </p>
-          <p>
-            <%= f.label :img, '画像' %>
-            <%= f.text_field :img %>
+            <%= f.label :name, '商品名' %><br>
+            <%= f.text_field :name, :size=>'30'%><br><br>
+            <%= f.label :country_of_origin, '原産国' %><br>
+            <%= f.select :country_of_origin, [['日本'],
+                                             ['アメリカ'],
+                                             ['ドイツ'],
+                                             ['イギリス'],
+                                             ['スウェーデン'],
+                                             ['カナダ'],
+                                             ['スイス'],
+                                             ['ニュージーランド'],
+                                             ['オーストラリア']], include_blank: true %><br><br>
+            <%= f.label :target_age, '対応年齢' %><br>
+            <%= f.select :target_age, [['妊娠期／授乳期用フード'],
+                                       ['幼時期／成長期用フード'],
+                                       ['維持期フード'],
+                                       ['シニア期用フード'],
+                                       ['全年齢対応']], include_blank: true %><br><br>
+            <%= f.label :grams, '内容量' %><br>
+            <%= f.text_field :grams, :size=>'30'%>グラム<br><br>
+            <%= f.label :price, '価格' %><br>
+            <%= f.text_field :price, :size=>'30' %>円<br><br>
+            <%= f.label :category, 'ジャンル' %><br>
+            <%= f.select :category, [['ドライ'],
+                                     ['ソフトドライ'],
+                                     ['セミモイスト'],
+                                     ['ウェット缶詰'],
+                                     ['アレルギー対応'],
+                                     ['おやつ']], include_blank: true %><br><br>
+            <%= f.label :img, '画像' %><br>
+            <%= f.text_field :img %><br>
           </p>
           <%= f.submit submit, class: "btn btn-outline-primary"%>
         </p>
     </div>
   </div>
 </div>
-
 <% end %>
