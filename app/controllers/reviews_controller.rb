@@ -9,8 +9,8 @@ class ReviewsController < ApplicationController
     if @review.save
       redirect_to item_path(id: @review.item_id)
     else
-      flash[:danger] = '失敗しました'
-      render :new
+      flash[:danger] = 'レビューは１つの商品に対し一件まで作成できます'
+      redirect_to items_path
     end
   end
  
