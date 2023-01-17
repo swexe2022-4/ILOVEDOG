@@ -12,6 +12,8 @@ class StaticPagesController < ApplicationController
       else
          @items = Item.all.where(target_age: 'シニア期用フード').limit(3)
       end
+    else
+      @items = Item.all.limit(3)
     end
   end
 

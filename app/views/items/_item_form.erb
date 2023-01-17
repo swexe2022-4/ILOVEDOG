@@ -36,8 +36,8 @@
                                      ['ウェット缶詰'],
                                      ['アレルギー対応'],
                                      ['おやつ']], include_blank: true %><br><br>
-            <%= f.label :img, '画像' %><br>
-            <%= f.text_field :img %><br>
+            <%= f.label :avatar_path , '画像'%><br>
+            <%= f.file_field :avatar_path, id: :item_avatar_path %>
           </p>
           <%= f.submit submit, class: "btn btn-outline-primary"%>
         </p>

@@ -18,7 +18,11 @@ module TopHelper
   end
   
   def admin_user
-    redirect_to root_url, flash: { danger: '正しいユーザーでログインしてください' } unless current_user&.admin == true
+    redirect_to root_url, flash: { danger: '正しいユーザーでログインしてください' } unless current_user.id == 1
+  end
+  
+  def logged_in
+    redirect_to login_path, flash: { danger: 'ログインしてください' }  if current_user.nil?
   end
 
   def logged_in?
