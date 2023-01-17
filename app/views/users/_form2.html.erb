@@ -14,13 +14,14 @@
     <ul class="list-group list-group-flush">
       <% @dogs&.each do |dog| %>
         <li class="list-group-item">
-          <%= dog.name %></br>
-          <%= dog.id %></br>
-          <%= dog.breeds %></br>
-          <%= dog.sex %></br>
-          <%= "#{dog.weight}kg" %></br>
-          <%= "#{(Date.today.strftime("%Y%m%d").to_i - dog.birthday.strftime("%Y%m%d").to_i) / 10000} 才"%>
-          </br><%= link_to '編集', edit_dog_path(id: dog.id), class: "btn btn-primary" %>
+          <p>
+            お名前：<%= dog.name %></br>
+            犬種：　<%= dog.breeds %></br>
+            性別：　<%= dog.sex %></br>
+            体重：　<%= "#{dog.weight}kg" %></br>
+            年齢：　<%= "#{(Date.today.strftime("%Y%m%d").to_i - dog.birthday.strftime("%Y%m%d").to_i) / 10000} 才"%>
+            </br><%= link_to '編集', edit_dog_path(id: dog.id), class: "btn btn-primary" %>
+          </p>
         </li>
       <% end %>
     </ul>

@@ -7,16 +7,15 @@
         </div>
         <p class="card-text">
           <p>
-            <%= f.label :title, 'タイトル' %>
+            <%= f.label :title, 'タイトル' %><br>
             <%= f.text_field :title, :size=>'30'%>
           </p>
           <p>
-            <%= f.label :body, '本文' %>
-            <%= f.text_field :body, include_blank: true %>
+            <%= f.label :body, '本文' %><br>
+            <%= f.text_area :body ,  class: 'form-control',size: "1x5"%>
           </p>
-        
+          <%= f.hidden_field :item_id, :value => params[:item_id] %>
           <%= f.submit submit, class: "btn btn-outline-primary"%>
-          
         </p>
     </div>
   </div>
