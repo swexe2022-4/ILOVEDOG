@@ -33,12 +33,11 @@
           <p>
             <%= f.body %><br>
             <p class='border-bottom'>
-               <% @dogs&.each do |dog| %>
-               <%= dog.breeds %>
-               <%= "#{(Date.today.strftime("%Y%m%d").to_i - dog.birthday.strftime("%Y%m%d").to_i) / 10000} 才"%>
-               <% end %>
+              <%= @dogs.where(user_id: f.user_id).first.name %>
+              <%= dogs.breeds %>
+              <%= "#{(Date.today.strftime("%Y%m%d").to_i - dogs.birthday.strftime("%Y%m%d").to_i) / 10000} 才"%>
             </p>
-            <% if current_user&.admin %>
+            <% if current_user.id == 1 %>
               <%= link_to '削除', item_path(f.id), method: :delete %>
               <%= link_to '編集', edit_item_path(f.id) %>
             <% end %>

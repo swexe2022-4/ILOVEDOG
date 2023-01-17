@@ -13,6 +13,7 @@ class ItemsController < ApplicationController
   def show
     @item = Item.find(params[:id])
     @reviews = Review.all.where(item_id: params[:id])
+    @dogs = Dog.all
   end
 
   def new

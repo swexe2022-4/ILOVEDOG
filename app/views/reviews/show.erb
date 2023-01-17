@@ -1,7 +1,6 @@
 <div>
     <%= @review.title %>
     <%= @review.body %>
-    
     <%= link_to '編集', edit_review_path(@review.id) %>
     <%= link_to '削除', review_path(@review.id), method: :delete %>
 </div>
