@@ -34,7 +34,11 @@
         <p class="card-text">
           <p>
             <%= f.body %><br>
-            <% if current_user&.admin %>
+            <p class='border-top'>
+              <%= @dogs.where(user_id: f.user_id).first.breeds %>
+              <%= "#{(Date.today.strftime("%Y%m%d").to_i - @dogs.where(user_id: f.user_id).first.birthday.strftime("%Y%m%d").to_i) / 10000} 才"%>
+            </p>
+            <% if current_user.id == 1 %>
               <%= link_to '削除', review_path(f.id), method: :delete %>
             <% end %>
           </p>
