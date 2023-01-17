@@ -32,6 +32,12 @@
         <p class="card-text">
           <p>
             <%= f.body %><br>
+            <p class='border-bottom'>
+               <% @dogs&.each do |dog| %>
+               <%= dog.breeds %>
+               <%= "#{(Date.today.strftime("%Y%m%d").to_i - dog.birthday.strftime("%Y%m%d").to_i) / 10000} 才"%>
+               <% end %>
+            </p>
             <% if current_user&.admin %>
               <%= link_to '削除', item_path(f.id), method: :delete %>
               <%= link_to '編集', edit_item_path(f.id) %>
