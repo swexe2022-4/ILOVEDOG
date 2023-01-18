@@ -15,7 +15,7 @@
           内容量：　　<%= @item.grams %><br>
           価格：　　　<%= @item.price %><br>
           カテゴリー：<%= @item.category %><br>
-          <% if current_user.id& == 1 %>
+          <% if current_user&.id == 1 %>
             <%= link_to '削除', item_path(@item.id), method: :delete %>
             <%= link_to '編集', edit_item_path(@item.id) %>
           <% end %>
