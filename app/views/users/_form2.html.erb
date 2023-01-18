@@ -29,6 +29,9 @@
       <div class="card-body">
         <%= link_to '人間の編集', edit_user_path(user.id), class: "btn btn-primary" %>
         <%= link_to '犬の登録', new_dog_path, class: "btn btn-primary" %>
+        <% if current_user&.id == 1 %>
+          <%= link_to '商品登録', new_item_path, class: "btn btn-primary" %>
+        <% end %>
       </div>
     <% end %>
   </div>
